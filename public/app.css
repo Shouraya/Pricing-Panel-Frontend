@@ -60,7 +60,6 @@ body {
 }
 
 .panel {
-    margin: 3rem 0;
     background-color: white;
     border-radius: 10px;
     padding: 15px 25px;
@@ -120,7 +119,7 @@ body {
 .pricing-button {
     color: #9dd1ff;
     border-radius: 10px;
-    color: #34fefe;
+    color: #348efe;
     display: inline-block;
     padding: 15px 35px;
     text-decoration: none;
@@ -140,4 +139,20 @@ body {
 .pricing-button.is-featured:hover, .pricing-button.is-featured:focus {
     background-color: #269aff;
     color: white;    
+}
+
+@media (min-width: 900px){
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 15px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
 }
